@@ -3,6 +3,7 @@ import java.awt.Font;
 import java.awt.event.*;
 import java.awt.ComponentOrientation;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -20,6 +21,10 @@ public class Main extends JFrame{
         setLocationRelativeTo(null);
         setLayout(null);
         setResizable(false);
+        
+        ImageIcon image = new ImageIcon("calculator.png");
+        // https://www.flaticon.com/free-icons/calculator
+        setIconImage(image.getImage());
         
         JPanel panel1 = new JPanel();
         panel1.setBounds(10, 10, 340, 80);
